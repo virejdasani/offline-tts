@@ -1,15 +1,15 @@
 
-const speak = (text, lang = 'id-ID', volume = 1, rate = 1, pitch = 1) => {
-  let synthesis = window.speechSynthesis
+const speak = (text, voice = 0, volume = 1, rate = 1, pitch = 1) => {
+  let speech = window.speechSynthesis
   let utterance = new SpeechSynthesisUtterance(text)
 
-  utterance.lang = lang
+  utterance.voice = speechSynthesis.getVoices()[voice];
   utterance.rate = rate
   utterance.pitch = pitch
   utterance.volume = volume
-  synthesis.cancel()
+  speech.cancel()
   
-  return synthesis.speak(utterance)
+  return speech.speak(utterance)
 }
 
 module.exports = speak
