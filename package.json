@@ -1,6 +1,6 @@
 {
   "name": "offline-tts",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "Easily convert text to speech, even offline!",
   "main": "index.js",
   "scripts": {
