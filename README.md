@@ -32,13 +32,22 @@ import speak from "offline-tts";
 function App() {
   return (
     <div className="App">
-
       <button
         onClick={() => {
-			speak("Hello world, this is offline text to speech!", 2, 1.5, 0.8, 0.6);
+          speak(
+          	// text
+            "hi there, how are you. This is offline text to speech!",
+            // voice
+            2,
+            // speed
+            1.5,
+            // volume
+            0.8,
+            // pitch
+            0.6
+          );
         }}
       >
-
         speak
       </button>
     </div>
