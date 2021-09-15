@@ -7,6 +7,8 @@ const speak = (text, voice = 0, speed = 1, volume = 1, pitch = 1) => {
   speech.volume = volume;
   speech.pitch = pitch;
 
+  synthesis.cancel()
+
   return synthesis.speak(speech);
 };
 
