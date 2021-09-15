@@ -1,4 +1,4 @@
-# offline-tts
+# [offline-tts](https://www.npmjs.com/package/offline-tts)
 
 ## Installation
 
