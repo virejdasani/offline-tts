@@ -1,5 +1,5 @@
 
-const TTS = (text, lang = 'id-ID', volume = 1, rate = 1, pitch = 1) => {
+const speak = (text, lang = 'id-ID', volume = 1, rate = 1, pitch = 1) => {
   let synthesis = window.speechSynthesis
   let utterance = new SpeechSynthesisUtterance(text)
 
@@ -12,4 +12,4 @@ const TTS = (text, lang = 'id-ID', volume = 1, rate = 1, pitch = 1) => {
   return synthesis.speak(utterance)
 }
 
-module.exports = TTS
+module.exports = speak
