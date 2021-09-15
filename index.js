@@ -1,5 +1,5 @@
 
-const speak = (text, voice = 0, volume = 1, rate = 1, pitch = 1) => {
+const say = (text, voice = 0, volume = 1, rate = 1, pitch = 1) => {
   let speech = window.speechSynthesis
   let utterance = new SpeechSynthesisUtterance(text)
 
@@ -24,7 +24,7 @@ const stopSpeech = () => {
   return speechSynthesis.cancel();
 };
 
-module.exports = speak
+module.exports = say
 module.exports = pauseSpeech;
 module.exports = resumeSpeech;
 module.exports = stopSpeech;
