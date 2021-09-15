@@ -1,0 +1,24 @@
+{
+  "name": "offline-tts",
+  "version": "1.0.0",
+  "description": "Easily convert text to speech, even offline!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virejdasani/offline-tts.git"
+  },
+  "keywords": [
+    "tts",
+    "text-to-speech",
+    "offline"
+  ],
+  "author": "Virej Dasani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/virejdasani/offline-tts/issues"
+  },
+  "homepage": "https://github.com/virejdasani/offline-tts#readme"
+}
