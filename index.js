@@ -12,4 +12,19 @@ const speak = (text, voice = 0, volume = 1, rate = 1, pitch = 1) => {
   return speech.speak(utterance)
 }
 
+const pauseSpeech = () => {
+  return speechSynthesis.pause();
+};
+
+const resumeSpeech = () => {
+  return speechSynthesis.resume();
+};
+
+const stopSpeech = () => {
+  return speechSynthesis.cancel();
+};
+
 module.exports = speak
+module.exports = pauseSpeech;
+module.exports = resumeSpeech;
+module.exports = stopSpeech;
