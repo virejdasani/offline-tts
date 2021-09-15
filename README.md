@@ -40,7 +40,7 @@ function App() {
         onClick={() => {
           speak(
             // text
-            "hi there, how are you. This is offline text to speech!",
+            "Hello world, this is offline text to speech!",
             // voice
             2,
             // speed
