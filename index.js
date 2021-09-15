@@ -1,5 +1,6 @@
 const speak = (text, voice = 0, speed = 1, volume = 1, pitch = 1) => {
-  var speech = new SpeechSynthesisUtterance(text);
+  let synthesis = window.speechSynthesis
+  let speech = new SpeechSynthesisUtterance(text);
 
   speech.voice = speechSynthesis.getVoices()[voice];
   speech.rate = speed;
